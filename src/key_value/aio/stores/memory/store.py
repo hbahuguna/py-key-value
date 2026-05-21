@@ -170,6 +170,9 @@ class MemoryStore(BaseDestroyStore, BaseDestroyCollectionStore, BaseEnumerateCol
         collection: str,
         managed_entry: ManagedEntry,
     ) -> None:
+        if managed_entry is None:
+            msg = "managed_entry cannot be None"
+            raise ValueError(msg)
         collection_cache = self._get_collection_or_raise(collection)
         collection_cache.put(key=key, value=managed_entry)
 
