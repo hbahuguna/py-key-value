@@ -1,0 +1,3 @@
+{
+  "file_path": "tests/stores/memory/test_memory.py",
+  "code": "import pytest\nimport asyncio\nfrom datetime import datetime, timedelta\n\n# Assuming the following structure for imports based on the file path\n# src/key_value/aio/stores/memory/store.py\n# src/key_value/aio/adapters/basic_serialization.py\nfrom key_value.aio.stores.memory.store import MemoryCollection\nfrom key_value.aio.adapters.basic_serialization import BasicSerializationAdapter\n\n@pytest.fixture\ndef basic_serialization_adapter():\n    \"\"\"Provides a BasicSerializationAdapter instance.\"\"\"\n
