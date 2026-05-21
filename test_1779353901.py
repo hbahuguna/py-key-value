@@ -1,0 +1,3 @@
+{
+  "file_path": "tests/stores/memory/test_memory.py",
+  "code": "import pytest\nfrom unittest.mock import patch, MagicMock\nimport time\nfrom typing import Any, Optional\n\n# --- Inferred classes based on context and summary ---\n# In a real scenario, these would be imported from the actual source:\n# from key_value.aio.stores.memory.store import MemoryStore, MemoryCacheEntry\n\nclass MemoryCacheEntry:\n    \"\"\"Represents a single cached item in memory, storing its serialized content and expiration timestamp.\"\"\"\n    def __init__(self, serialized_content: bytes, expires_at: float):\n
