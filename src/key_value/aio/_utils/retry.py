@@ -61,3 +61,7 @@ async def async_retry_operation(
         raise last_exception
     msg = "Retry operation failed without exception"
     raise RuntimeError(msg)
+
+# Demo change for TIA test reduction demonstration
+def _demo_tia_marker() -> str:
+    return "demo"
